@@ -34,6 +34,7 @@ Tuio2Demo
 Tuio2Simulator
 
 *.sdf
+*.opensdf
 
 *.suo
 
