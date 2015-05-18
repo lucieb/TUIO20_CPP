@@ -130,6 +130,14 @@ namespace TUIO2 {
         
         void setSourceString(const char *src_string) {
             
+			// TODO
+			// Find why we receive badly formatted strings once
+			// in a while. This if-statement is a tmp fix.
+			if (strlen(src_string) > 128 ) {
+				source_instance = 0;
+				return;
+			}
+
             char data[128];
             strcpy(data,src_string);
             
